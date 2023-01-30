@@ -9,12 +9,10 @@ public class Main {
                 System.out.print("Введите год: ");
                 year = new Scanner(System.in).nextInt();
                 flag = false;
-            }catch(Exception e){
-                System.out.println("Введен не год " + e);
+            }catch(Exception e){               
+                System.out.println("\nВведен не год " + e);
             }
         }
-        System.out.println();
-        ProgrammersDay progDay = new ProgrammersDay(year);
-        System.out.println("День программиста: " + progDay.getLocalDate());
+        System.out.println("\nДень программиста: " + new ProgrammersDay(year).getLocalDate());
     }
 }
